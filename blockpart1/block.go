@@ -10,10 +10,10 @@ import (
 
 // Block 结构体是区块信息
 type Block struct {
-	Timestamp     int64							//当前时间戳，也就是区块创建的时间
-	Data          []byte						//区块存储的实际有效信息，也就是交易
-	PrevBlockHash []byte						//前一个块的哈希，即父哈希
-	Hash          []byte						//当前块的哈希
+	Timestamp     int64		//当前时间戳，也就是区块创建的时间
+	Data          []byte	//区块存储的实际有效信息，也就是交易
+	PrevBlockHash []byte	//前一个块的哈希，即父哈希
+	Hash          []byte	//当前块的哈希
 }
 
 // SetHash 方法计算和设置区块的hash

@@ -31,7 +31,7 @@ func NewProofOfWork(b *Block) *ProofOfWork{
 	fmt.Println("target1:",target)
 	// 左移 256 - targetBits 位
 	target.Lsh(target, uint(256-targetBits))
-	// 为以后的值
+	// 左移以后的值
 	fmt.Println("target2:",target)
 	pow := &ProofOfWork{b, target}
 	fmt.Println(pow)
